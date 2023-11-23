@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node ./dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "lint": "eslint src--ignore-path .eslintignore --ext .js,.ts",
     "lint:fixed": "npm eslint src --fix",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\" ",
